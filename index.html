@@ -226,6 +226,100 @@
             border: 3px solid rgb(255, 255, 255);
             border-radius: 5px;
         }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* ====== Headings ====== */
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: #00e6ff;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #00e6ff;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background: #00e6ff;
+            display: block;
+            margin-top: 6px;
+            border-radius: 2px;
+        }
+
+        /* ====== Sections ====== */
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px 30px;
+            border-radius: 12px;
+            margin-top: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #eaeaea;
+        }
+
+        /* ====== Skills ====== */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px 18px;
+            border-radius: 10px;
+            border-left: 4px solid #00e6ff;
+        }
+
+        .skill-box strong {
+            color: #ffffff;
+        }
+
+        /* ====== Lists ====== */
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        /* ====== Footer ====== */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #bdbdbd;
+        }
+
+        /* ====== Responsive ====== */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+        }
     </style>
 </head>
 
@@ -259,75 +353,103 @@
 
     <!-- ABOUT -->
     <section id="about" class="about section">
-        <h2>About Me</h2>
-        <p>
-            Professional Profile<br>
+        <div class="container">
 
-I am a passionate and detail-oriented Computer Engineering professional with a strong foundation in programming, software development, and problem-solving. I have a deep interest in building efficient, scalable, and user-friendly applications while continuously improving my technical skills to stay aligned with modern technologies.
+        <h1>Professional Profile</h1>
 
-With hands-on experience in coding, logical problem solving, and application development, I enjoy transforming ideas into functional digital solutions. I possess a strong understanding of computer fundamentals, data structures, databases, and software development principles, which allows me to approach problems analytically and deliver optimized results.<br><br>
+        <div class="section">
+            <p>
+                I am a passionate and detail-oriented <strong>Computer Engineering professional</strong> with a strong foundation in programming, software development, and problem-solving. I have a deep interest in building efficient, scalable, and user-friendly applications while continuously improving my technical skills to stay aligned with modern technologies.
+            </p>
+            <p>
+                With hands-on experience in coding, logical problem solving, and application development, I enjoy transforming ideas into functional digital solutions. I possess a strong understanding of computer fundamentals, data structures, databases, and software development principles, which allows me to approach problems analytically and deliver optimized results.
+            </p>
+        </div>
 
+        <h2>Technical Skills</h2>
+        <div class="section">
+            <div class="skills-list">
 
-            Technical Skills<br><br>
+                <div class="skill-box">
+                    <strong>Programming Languages</strong><br>
+                    Python, C, C++, Java (Basics to Intermediate)
+                </div>
 
-I have experience working with multiple programming languages and tools, including:<br>
+                <div class="skill-box">
+                    <strong>Software Development</strong><br>
+                    Object-Oriented Programming (OOP), Modular Coding, Debugging
+                </div>
 
-Programming Languages: Python, C, C++, Java (basics to intermediate level)<br>
+                <div class="skill-box">
+                    <strong>Database Management</strong><br>
+                    SQLite, Basic SQL Queries, Database Design Concepts
+                </div>
 
-Software Development: Object-Oriented Programming (OOP), modular coding, debugging<br>
+                <div class="skill-box">
+                    <strong>GUI & Application Development</strong><br>
+                    Tkinter (Python GUI Development)
+                </div>
 
-Database Management: SQLite, basic SQL queries, database design concepts<br>
+                <div class="skill-box">
+                    <strong>Core Computer Science</strong><br>
+                    Data Structures & Algorithms, OS Basics, CN Fundamentals, DBMS
+                </div>
 
-GUI & Application Development: Tkinter (Python GUI development)<br>
+                <div class="skill-box">
+                    <strong>Tools & Technologies</strong><br>
+                    Git (Basic), IDEs, Code Editors, Debugging Tools
+                </div>
 
-Core Computer Science Concepts:<br>
+            </div>
+        </div>
 
-Data Structures & Algorithms<br>
+        <h2>Projects & Practical Experience</h2>
+        <div class="section">
+            <p>
+                I have worked on real-world academic and personal projects involving database integration, user interfaces, and logical workflows. These projects strengthened my ability to:
+            </p>
+            <ul>
+                <li>Design structured and maintainable code</li>
+                <li>Implement business logic and validations</li>
+                <li>Work with databases for storing and retrieving data</li>
+                <li>Debug and optimize existing applications</li>
+            </ul>
+            <p>
+                I strongly believe in learning by building, and I regularly experiment with new ideas and technologies to improve my practical knowledge.
+            </p>
+        </div>
 
-Operating Systems basics<br>
+        <h2>Professional Strengths</h2>
+        <div class="section">
+            <ul>
+                <li>Strong logical and analytical thinking</li>
+                <li>Quick learner with a growth mindset</li>
+                <li>Ability to work independently and in teams</li>
+                <li>Clean and readable coding practices</li>
+                <li>Problem-solving focused approach</li>
+                <li>Good understanding of system-level concepts</li>
+            </ul>
+        </div>
 
-Computer Networks fundamentals<br>
+        <h2>Career Objective</h2>
+        <div class="section">
+            <p>
+                My goal is to grow as a skilled software engineer and contribute to innovative projects that solve real-world problems. I aim to continuously enhance my technical expertise, work on impactful technologies, and build solutions that add value to organizations and users alike.
+            </p>
+        </div>
 
-DBMS concepts<br>
+        <h2>Personal Note</h2>
+        <div class="section">
+            <p>
+                I am highly motivated, disciplined, and dedicated to improving my skills every day. I believe consistency, curiosity, and practical implementation are the keys to success in the field of computer engineering.
+            </p>
+        </div>
 
-Tools & Technologies: Git (basic), IDEs, code editors, debugging tools<br><br>
+        <div class="footer">
+            © 2026 | Computer Engineering Portfolio
+        </div>
 
-            Projects & Practical Experience<br>
-
-I have worked on real-world academic and personal projects, including software systems that involve database integration, user interfaces, and logical workflows. These projects strengthened my ability to:<br><br>
-
-Design structured and maintainable code<br>
-
-Implement business logic and validations<br>
-
-Work with databases for storing and retrieving data<br>
-
-Debug and optimize existing applications<br>
-
-I strongly believe in learning by building, and I regularly experiment with new ideas and technologies to improve my practical knowledge.<br><br>
-
-            Professional Strengths<br>
-
-Strong logical and analytical thinking<br>
-
-Quick learner with a growth mindset<br>
-
-Ability to work independently and in teams<br>
-
-Clean and readable coding practices<br>
-
-Problem-solving focused approach<br>
-
-Good understanding of system-level concepts<br><br>
-
-            Career Objective<br>
-
-My goal is to grow as a skilled software engineer and contribute to innovative projects that solve real-world problems. I aim to continuously enhance my technical expertise, work on impactful technologies, and build solutions that add value to organizations and users alike.<br><br>
-
-            Personal Note<br>
-
-I am highly motivated, disciplined, and dedicated to improving my skills every day. I believe consistency, curiosity, and practical implementation are the keys to success in the field of computer engineering.
-        </p>
+    </div>
     </section>
 
     <!-- SKILLS -->
@@ -416,5 +538,6 @@ I am highly motivated, disciplined, and dedicated to improving my skills every d
 </body>
 
 </html>
+
 
 
